@@ -3,6 +3,7 @@ self.C3_GetObjectRefTable = function () {
 	return [
 		C3.Plugins.Sprite,
 		C3.Behaviors.Platform,
+		C3.Behaviors.Physics,
 		C3.Behaviors.solid,
 		C3.Plugins.TiledBg,
 		C3.Behaviors.Flash,
@@ -26,7 +27,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Cnds.CompareVar,
-		C3.Behaviors.Platform.Acts.FallThrough,
 		C3.Behaviors.Bullet.Acts.SetEnabled,
 		C3.Behaviors.solid.Acts.SetEnabled,
 		C3.Plugins.Sprite.Acts.SetAnim,
@@ -37,6 +37,7 @@ self.C3_JsPropNameTable = [
 	{lava: 0},
 	{Plataforma: 0},
 	{Plataforma2: 0},
+	{Física: 0},
 	{Sprite: 0},
 	{texto: 0},
 	{Sólido: 0},
@@ -80,6 +81,7 @@ self.C3_JsPropNameTable = [
 	{c19653ff76cc472fb90304c24ddb3cbb: 0},
 	{Sprite28: 0},
 	{Texto4: 0},
+	{Sprite29: 0},
 	{moeda: 0},
 	{Marreta: 0}
 ];
@@ -122,5 +124,6 @@ self.InstanceType = {
 	Texto3: class extends self.ITextInstance {},
 	c19653ff76cc472fb90304c24ddb3cbb: class extends self.ISpriteInstance {},
 	Sprite28: class extends self.ISpriteInstance {},
-	Texto4: class extends self.ITextInstance {}
+	Texto4: class extends self.ITextInstance {},
+	Sprite29: class extends self.ISpriteInstance {}
 }
